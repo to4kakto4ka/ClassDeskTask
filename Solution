@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+    int astudent = 0, bstudent = 0, cstudent = 0, aclass, bclass, cclass, totalclass;
+    cin >> astudent >> bstudent >> cstudent;
+    aclass = (astudent + 1) / 2;
+    bclass = (bstudent + 1) / 2;
+    cclass = (cstudent + 1) / 2;
+    totalclass = aclass + bclass + cclass;
+    cout << totalclass;
+    return 0;
+}
