@@ -1,0 +1,15 @@
+#include <iostream>
+
+using namespace std;
+
+int main() 
+{
+    int totalsec = 0, days = 0, h = 0, m=0, s=0;
+    cin >> totalsec;
+    days = totalsec % 86400; //тут у нас остаются секунды, после вычета лишних 24-часовых циклов
+    h = days / 3600; //тут часы
+    s = days % 60; //тут секунды
+    m = (days % 3600) / 60; //тут минуты
+    cout << h << ":" << m / 10 << m % 10 << ":" << s / 10 << s % 10;
+    return 0;
+}
